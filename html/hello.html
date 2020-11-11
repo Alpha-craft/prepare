@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("Hallo console dari ");
+    </script>
+</head>
+<body>
+    <a href="javascript:alert('arigatou-senpai')">click aku</a>
+    <script>
+        let q = prompt("masukkan nama Anda:")
+        console.log("Hello",q);
+        <!-- document.write("hello console dari body"); -->
+        document.write("<p> Halo,  </p>",q)
+        function nama(){
+            let name = prompt("Masukkan nama anda");
+            if (confirm("Jadi nama andalah?",name) == true){
+                document.write(" <h1>Nama anda adalah:</h1>",name)
+            }
+            else{
+                document.write("Lah kenapa lu pakai identitas palsu anying")
+            }
+            
+        }
+    </script>
+
+    <p onclick="nama()" >click aku</p>
+
+</body>
+</html>
