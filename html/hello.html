@@ -11,16 +11,21 @@
 </head>
 
 <body>
+
+    <div class="test"></div>
+
     <!-- document.write("hello console dari body"); -->
     <a href="javascript:alert('arigatou-senpai')">click aku</a>
     <script>
+        let test = document.getElementsByClassName("test")
+
         let q = prompt("masukkan nama Anda:")
         console.log("Hello", q);
         document.write("<p> Halo,  </p>", q)
 
         function nama() {
             let name = prompt("Masukkan nama anda");
-            if (confirm("Jadi nama andalah?", name) == true) {
+            if (confirm("Jadi nama andalah?") == true) {
                 document.write(" <h1>Nama anda adalah:</h1>", name)
             } else {
                 document.write("Lah itu nama anda apa bukan?", name)
